@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 0.7fr 1.2fr 1.4fr 0.7fr;
+      grid-template-rows: 0.3fr 0.3fr 2.6fr 0.3fr 2.2fr 0.3fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+    }
+
+    .herder1 {
+      grid-area: 1 / 1 / 2 / 5;
+      padding-bottom: 1px;
+      height: 63px;
+      background-color: #eae9e9;
+      border-width: 2px;
+      border-bottom-color: #0d6efd;
+    }
+
+    .herder2 {
+      grid-area: 2 / 1 / 3 / 5;
+      height: 63px;
+      background-color: #eeeeee;
+    }
+
+    .herder3 {
+      grid-area: 1 / 2 / 2 / 3;
+      font-size: 35px;
+    }
+    .herder3 > p > img {
+      width: auto;
+      height: 50px;
+    }
+
+    .herder4 {
+      grid-area: 2 / 2 / 3 / 3;
+      font-size: 35px;
+    }
+
+    .herder5 {
+      grid-area: 2 / 3 / 3 / 4;
+      padding-left: 280px;
+      padding-top: 30px;
+    }
+
+    .nav {
+      grid-area: 3 / 2 / 5 / 4;
+      border-style: solid;
+      border-color: #eeeeee;
+    }
+
+    .nav1 {
+      grid-area: 3 / 2 / 4 / 3;
+      padding-left: 50px;
+      padding-top: 50px;
+    }
+    .nav1 > div > p {
+      width: 390px;
+      height: 40px;
+      padding-top: 10px;
+    }
+    #for {
+      float: right;
+    }
+    #name,
+    #Password {
+      width: 390px;
+      height: 40px;
+    }
+
+    .nav2 {
+      grid-area: 3 / 3 / 4 / 4;
+      padding-top: 50px;
+    }
+
+    .nav3 {
+      grid-area: 4 / 2 / 5 / 4;
+      background-color: #f7f7f7;
+      padding-top: 8px;
+      text-align: center;
+    }
+
+    .nav4 {
+      grid-area: 6 / 1 / 7 / 5;
+    }
+    .button {
+      width: 200px;
+      height: 60px;
+    }
+    .herder5 ul > li {
+      list-style-type: none;
+    }
+    .div > but #but1 {
+      width: 50px;
+      height: 60px;
+    }
+    #but1 {
+      background-color: #0d6efd;
+      border-radius: 5px;
+      width: 390px;
+      height: 55px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="herder1"></div>
+      <br style="color: red; border: 1px" />
+      <div class="herder2"></div>
+      <div class="herder3">
+        <p>
+          <img
+            src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"
+            alt="tupian"
+          />华颢用户中心
+        </p>
+      </div>
+      <div class="herder4">
+        <div>login</div>
+      </div>
+      <div class="herder5">
+        <ul>
+          <li style="float: left; color: azure">
+            <a href=""> 联系我们</a>&nbsp;&nbsp;
+          </li>
+          <li style="float: left; color: azure">
+            <a href=""> |</a>&nbsp;&nbsp;
+          </li>
+
+          <li style="float: left"><a href=""> 帮助</a>&nbsp;&nbsp;</li>
+          <li style="float: left; color: azure">
+            <a href=""> |</a>&nbsp;&nbsp;
+          </li>
+
+          <li style="float: left">
+            <a href="" style="text-decoration: none"> login</a>&nbsp;&nbsp;
+          </li>
+
+          <li style="float: left">
+            <select
+              name=""
+              id=""
+              style="border: none; background-color: #eae9e9"
+            >
+              <option value="简体中文">简体中文</option>
+              <option value="简体中文">English</option></select
+            >&nbsp;&nbsp;
+          </li>
+        </ul>
+      </div>
+      <div class="nav"></div>
+      <div class="nav1">
+        <div><p>Name/Email</p></div>
+        <div><input type="text" id="name" /></div>
+        <div><p>Password</p></div>
+        <div><input type="text" id="Password" /></div>
+        <div
+          class="but"
+          id="ccc1"
+          style="height: 60px; padding-top: 10px; padding-right: 130px"
+        >
+          <input type="checkbox" name="" id="xuan" />readme
+          <a href="" id="for">ForgotPassword</a>
+        </div>
+        <div class="but" id="ccc1" style="padding-bottom: 20px">
+          <button id="but1" style="font-size: 30px; color: #f7f7f7">
+            login
+          </button>
+        </div>
+      </div>
+      <div class="nav2">
+        <h1>Welcome to Our Website</h1>
+        <p style="padding: 30px">
+          Registering for a free account gives you a number of additional <br />
+          benefits, including access to additional valuable information that
+          you<br />
+          can browse or download, and much more.
+        </p>
+      </div>
+      <div class="nav3">
+        <p>
+          华灏公司对外提供身份认证的唯一接口，在使用华颢公司的其他对外服务时，你的账号和登录信息会被共享。
+        </p>
+      </div>
+      <div class="nav4" align="center">
+        <p>版权所有@秋创科技有限公司1998-2022,保留一切权力。</p>
+      </div>
+    </div>
+  </body>
+</html>
