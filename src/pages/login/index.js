@@ -43,6 +43,7 @@ class Index extends PureComponent {
     const { loading, isError } = this.props;
     return (
       <div className={styles.content}>
+        <div id="u6_div"></div>
         <Row>
           <Col span={24} className={styles.logo}>
             <img alt="logo" src={logo} />

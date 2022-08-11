@@ -14,7 +14,7 @@ module.exports = {
     loginLogo: 'logo_blue_1024.png',
     sysLogo: 'logo.png',
     // 登录页名称
-    loginName: '数据平台',
+    loginName: '资产管理系统',
     // 系统名称
     sysName: 'TEST-Pro',
     // 版权
