@@ -25,7 +25,13 @@ class Index extends PureComponent {
       message.warning('用户未登录，请登录后访问！');
     }
   }
+  state={
+
+  }
   handleSubmit = (err, values) => {
+    this.setState({
+      abc:'8888'
+    })
     for (const name in values) {
       if (values[name] === undefined) {
         message.error('用户名或密码错误！');
@@ -45,7 +51,7 @@ class Index extends PureComponent {
       <div className={styles.content}>
         <div id="u6_div"></div>
         <Row>
-          <Col span={24} className={styles.logo}>
+          <Col  span={24} className={styles.logo}>
             <img alt="logo" src={logo} />
           </Col>
         </Row>

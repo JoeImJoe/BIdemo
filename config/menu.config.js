@@ -6,7 +6,7 @@ export default [
         icon: "github"
     },
     {
-        title: "地域分析",
+        title: "地域分析123",
         link: "/sys/regionalAnalysis",
         key: "regionalAnalysis",
         icon: "idcard"
