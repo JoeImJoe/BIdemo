@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .div0 {
+      display: flex;
+      width: 1920px;
+      justify-content: center;
+      align-items: center;
+      background-image: url();
+    }
+    .div1 {
+      /* display: flex; */
+      width: 350px;
+      height: 420px;
+      box-shadow: 5px 5px 5px gray;
+      /* justify-content: center; */
+    }
+    #kong {
+      padding-bottom: 0;
+      height: 10px;
+      background-color: #1abc9c;
+    }
+    #kong1 {
+      padding-bottom: 0;
+    }
+    .div1 > div {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+    img {
+      margin-top: 10px;
+      width: 130px;
+      height: 90px;
+    }
+    #p1 {
+      font-size: 25px;
+      align-items: center;
+    }
+    #input1 {
+      width: 250px;
+      height: 45px;
+      border-radius: 3px;
+      padding-left: 50px;
+      border-color: #e4e4e4;
+      outline-color: #1abc9c;
+      background-image: url(./u22.png);
+      background-position: 12px 8px;
+      background-repeat: no-repeat;
+    }
+    #input2 {
+      width: 250px;
+      height: 45px;
+      border-radius: 3px;
+      padding-left: 50px;
+      border-color: #e4e4e4;
+      outline-color: #1abc9c;
+      background-image: url(./u24.png);
+      background-position: 12px 8px;
+      background-repeat: no-repeat;
+    }
+    button {
+      width: 305px;
+      height: 50px;
+      border: 5px;
+      border-color: #1abc9c;
+      border-radius: 3px;
+      background-color: #1abc9c;
+    }
+    #p2 {
+      font-size: 5px;
+      color: #e4e4e4;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+  </style>
+  <body>
+    <!-- 大背景 -->
+    <div class="div0" id="u6_div">
+      <!-- 登陆界面 -->
+      <div class="div1">
+        <!-- 空白 -->
+        <div class="box-0" id="kong"></div>
+        <!-- 图片 -->
+        <div class="box-1" id="kong1">
+          <img src="./logo_blue_1024.png" alt="" />
+        </div>
+        <!-- 标题 -->
+        <div class="box-2">
+          <p id="p1" style="color: #1abc9c"><strong>资源管理系统</strong></p>
+        </div>
+        <!-- 账号 -->
+        <div class="box-3">
+          <input type="text" id="input1" placeholder="请输入用户名称" />
+          <!-- <img src="./logo_blue_1024.png" alt="" /> -->
+        </div>
+        <!-- 密码 -->
+        <div class="box-4">
+          <input type="password" id="input2" placeholder="请输入登录密码" />
+        </div>
+        <!-- 按键 -->
+        <div class="box-5">
+          <button style="font-size: 25px">登录</button>
+        </div>
+      </div>
+      <div id="dibu">
+        <p id="p2">
+          Copyright © , All Rights Reserved. <br />
+          Email : 522750823@qq.com
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
